@@ -1,19 +1,49 @@
-## Requirements:
+# Yoga Studio Management System
 
-## Store employee information
+## Project Overview
+This system manages employee information, roles, responsibilities, and task tracking for a yoga studio.
 
-## employee attributes: first name <string>, last name <string>, email <string>, phone # <uint8>, list of roles [list <string>]
+## Requirements
 
-## Maintain a list of roles and their associated responsibilities, or days on which responsibilities are to be done
+### Employee Management
+- Store employee information with the following attributes:
+  - First Name (string)
+  - Last Name (string)
+  - Email (string)
+  - Phone Number (uint8)
+  - List of Roles (list of strings)
 
-## possible roles: hospitality, instructor, owner, optional: admin
+### Role and Responsibility Management
+- Maintain a list of roles and their associated responsibilities
+- Track days on which responsibilities are to be performed
+- Possible roles include:
+  - Hospitality
+  - Instructor
+  - Owner
+  - Admin (optional)
+- Role attributes:
+  - Title (string)
+  - Substitute Flag (boolean)
+  - List of Tasks (list of strings)
 
-## role attributes: title <string>, sub_flag <bool>, list of tasks [list <strings>]
+### Task Tracking
+- Track when each employee last performed specific responsibilities
+- Track when each responsibility was last performed by any employee
 
-## Track when each employee last performed specific responsibilities
+### Reporting
+- Allow for easy querying and reporting of information
 
-## Track when each responsibility was last performed by any employee
+### Optional Features
+- Track miscellaneous administrative tasks
 
-## Allow for easy querying and reporting of this information
+## Data Structure
 
-## optional: track misc admin tasks
+### Employee
+```python
+{
+  "first_name": string,
+  "last_name": string,
+  "email": string,
+  "phone_number": uint8,
+  "roles": [string]
+}
