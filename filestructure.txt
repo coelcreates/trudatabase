@@ -19,14 +19,18 @@ YogaStudioManagementSystem/
 │   │   │
 │   │   ├── Data/
 │   │   │   └── YogaStudioContext.cs
-│   │   │
-│   │   ├── Program.cs
-│   │   └── appsettings.json
 │   │
-│   └── YogaStudio.Tests/
-│       ├── EmployeeTests.cs
-│       ├── RoleTests.cs
-│       └── TaskTests.cs
+│   ├── YogaStudio.Tests/
+│   │    ├── EmployeeTests.cs
+│   │    ├── RoleTests.cs
+│   │    └── TaskTests.cs
+│   ├── SQL/
+│   │    │   ├── InitialSchema.sql
+│   │    │   ├── SeedData.sql
+│   │    │   └── Queries/
+│   │    │       └── ReportQueries.sql
+│   ├── Program.cs
+│   └── appsettings.json
 │
 ├── .gitignore
 ├── README.md
