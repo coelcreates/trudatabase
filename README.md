@@ -39,11 +39,11 @@ This system manages employee information, roles, responsibilities, and task trac
 ## Data Structure
 
 ### Employee
-```python
+```c#
 {
   "first_name": string,
   "last_name": string,
   "email": string,
   "phone_number": uint8,
-  "roles": [string]
+  "roles": string
 }

@@ -1,0 +1,33 @@
+YogaStudioManagementSystem/
+│
+├── src/
+│   ├── YogaStudio/
+│   │   ├── Controllers/
+│   │   │   ├── EmployeesController.cs
+│   │   │   ├── RolesController.cs
+│   │   │   └── TasksController.cs
+│   │   │
+│   │   ├── Models/
+│   │   │   ├── Employee.cs
+│   │   │   ├── Role.cs
+│   │   │   └── Task.cs
+│   │   │
+│   │   ├── Services/
+│   │   │   ├── EmployeeService.cs
+│   │   │   ├── RoleService.cs
+│   │   │   └── TaskService.cs
+│   │   │
+│   │   ├── Data/
+│   │   │   └── YogaStudioContext.cs
+│   │   │
+│   │   ├── Program.cs
+│   │   └── appsettings.json
+│   │
+│   └── YogaStudio.Tests/
+│       ├── EmployeeTests.cs
+│       ├── RoleTests.cs
+│       └── TaskTests.cs
+│
+├── .gitignore
+├── README.md
+└── YogaStudioManagementSystem.sln

@@ -1,9 +1,4 @@
-//using System;
+using System;
 
-class HellowWorld
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, Warld!");
-    }
-}
+
+            Console.WriteLine("Hello, World!");
