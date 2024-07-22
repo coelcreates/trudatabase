@@ -1,0 +1,15 @@
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/bin/Debug/net8.0/HellowWorld
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/bin/Debug/net8.0/HellowWorld.deps.json
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/bin/Debug/net8.0/HellowWorld.runtimeconfig.json
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/bin/Debug/net8.0/HellowWorld.dll
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/bin/Debug/net8.0/HellowWorld.pdb
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/obj/Debug/net8.0/HellowWorld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/obj/Debug/net8.0/HellowWorld.AssemblyInfoInputs.cache
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/obj/Debug/net8.0/HellowWorld.AssemblyInfo.cs
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/obj/Debug/net8.0/HellowWorld.csproj.CoreCompileInputs.cache
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/obj/Debug/net8.0/HellowWorld.sourcelink.json
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/obj/Debug/net8.0/HellowWorld.dll
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/obj/Debug/net8.0/refint/HellowWorld.dll
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/obj/Debug/net8.0/HellowWorld.pdb
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/obj/Debug/net8.0/HellowWorld.genruntimeconfig.cache
+/Users/cocoe/Desktop/projects/trudatabase/HellowWorld/obj/Debug/net8.0/ref/HellowWorld.dll
