@@ -1,0 +1,66 @@
+erDiagram
+    EMPLOYEES ||--o{ EMPLOYEE_ROLES : has
+    EMPLOYEES ||--o{ EMPLOYEE_RESPONSIBILITIES : assigned
+    ROLES ||--o{ EMPLOYEE_ROLES : assigned_to
+    ROLES ||--o{ ROLE_RESPONSIBILITIES : has
+    RESPONSIBILITIES ||--o{ ROLE_RESPONSIBILITIES : assigned_to
+    RESPONSIBILITIES ||--o{ EMPLOYEE_RESPONSIBILITIES : assigned_to
+
+
+    EMPLOYEES {
+        int employee_id PK
+        string first_name
+        string last_name
+        string email
+        string phone_number
+        date hire_date
+        decimal teaching_salary
+        decimal hospitality_salary
+    }
+
+
+    ROLES {
+        int role_id PK
+        string role_name
+        string description
+    }
+
+
+    RESPONSIBILITIES {
+        int responsibility_id PK
+        string description
+    }
+
+
+    EMPLOYEE_ROLES {
+        int employee_id PK,FK
+        int role_id PK,FK
+        boolean sub_flag
+    }
+
+
+    ROLE_RESPONSIBILITIES {
+        int role_id PK,FK
+        int responsibility_id PK,FK
+    }
+
+
+    EMPLOYEE_RESPONSIBILITIES {
+        int employee_id PK,FK
+        int responsibility_id PK,FK
+        date assigned_date
+        enum status
+    }
+
+
+Relationships:
+
+EMPLOYEES to EMPLOYEE_ROLES: One-to-many (an employee can have multiple roles)
+EMPLOYEES to EMPLOYEE_RESPONSIBILITIES: One-to-many (an employee can be assigned multiple responsibilities)
+ROLES to EMPLOYEE_ROLES: One-to-many (a role can be assigned to multiple employees)
+ROLES to ROLE_RESPONSIBILITIES: One-to-many (a role can have multiple responsibilities)
+RESPONSIBILITIES to ROLE_RESPONSIBILITIES: One-to-many (a responsibility can be associated with multiple roles)
+RESPONSIBILITIES to EMPLOYEE_RESPONSIBILITIES: One-to-many (a responsibility can be assigned to multiple employees)
+
+
+This updated ERD now accurately reflects the structure of your database without the manager-employee relationship. The removal of the manager_id field simplifies the employee structure, but it also means that any hierarchical relationships between employees (if needed) would have to be managed through other means, such as roles or a separate table.

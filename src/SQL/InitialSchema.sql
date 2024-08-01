@@ -36,8 +36,6 @@ CREATE TABLE employees (
     hire_date DATE,
     teaching_salary DECIMAL(10, 2),
     hospitality_salary DECIMAL(10, 2),
-    manager_id INT,
-    FOREIGN KEY (manager_id) REFERENCES employees(employee_id)
 );
 
 -- Create the roles table
