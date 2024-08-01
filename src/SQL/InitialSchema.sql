@@ -44,6 +44,7 @@ CREATE TABLE employees (
 CREATE TABLE roles (
     role_id INT PRIMARY KEY AUTO_INCREMENT,
     role_name VARCHAR(50) NOT NULL,
+    sub_flag BOOLEAN NOT NULL,
     description TEXT NOT NULL
 );
 
