@@ -30,28 +30,54 @@ CREATE TABLE employees (
     email VARCHAR(100) UNIQUE NOT NULL,
     phone_number VARCHAR(20) UNIQUE NOT NULL,
     hire_date DATE,
-    FOREIGN KEY (roles) REFERENCES roles(role_id),
     teaching_salary DECIMAL(10, 2),
     hospitality_salary DECIMAL(10, 2),
     manager_id INT,
     FOREIGN KEY (manager_id) REFERENCES employees(employee_id)
 );
-/* manager_id INT,: Stores the employee_id of this employee's manager
-Can be NULL (for employees without a manager, like the owner)
 
-FOREIGN KEY (manager_id) REFERENCES employees(employee_id): Creates a foreign key relationship
-The manager_id column references the employee_id column in the same table
-This allows for a hierarchical structure within the employees table */
+-- Create the roles table
+CREATE TABLE roles (
+    role_id INT PRIMARY KEY AUTO_INCREMENT,
+    role_name VARCHAR(50) NOT NULL,
+    description TEXT NOT NULL
+);
 
 -- Create the responsibilities table
 CREATE TABLE responsibilities (
     responsibility_id INT PRIMARY KEY AUTO_INCREMENT,
-    employee_id INT, --NOT NULL,
-    description TEXT NOT NULL,
+    description TEXT NOT NULL
+);
+
+-- Create the employee_roles junction table
+CREATE TABLE employee_roles (
+    employee_id INT,
+    role_id INT,
+    PRIMARY KEY (employee_id, role_id),
+    FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
+    FOREIGN KEY (role_id) REFERENCES roles(role_id)
+);
+
+-- Create the role_responsibilities junction table
+CREATE TABLE role_responsibilities (
+    role_id INT,
+    responsibility_id INT,
+    PRIMARY KEY (role_id, responsibility_id),
+    FOREIGN KEY (role_id) REFERENCES roles(role_id),
+    FOREIGN KEY (responsibility_id) REFERENCES responsibilities(responsibility_id)
+);
+
+-- Create the employee_responsibilities table to track responsibility assignments
+CREATE TABLE employee_responsibilities (
+    employee_id INT,
+    responsibility_id INT,
     assigned_date DATE NOT NULL,
     status ENUM('Pending', 'In Progress', 'Completed') DEFAULT 'Pending',
-    FOREIGN KEY (employee_id) REFERENCES employees(employee_id)
+    PRIMARY KEY (employee_id, responsibility_id),
+    FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
+    FOREIGN KEY (responsibility_id) REFERENCES responsibilities(responsibility_id)
 );
+
 
 -- Restore previous SQL settings
 /*These lines restore the original settings:
