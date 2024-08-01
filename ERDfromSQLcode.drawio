@@ -119,7 +119,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rsEL6gUZ8bBxBFCF2_QT-28" value="manager_id INT" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="rsEL6gUZ8bBxBFCF2_QT-26">
+        <mxCell id="rsEL6gUZ8bBxBFCF2_QT-28" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="rsEL6gUZ8bBxBFCF2_QT-26">
           <mxGeometry x="30" width="450" height="30" as="geometry">
             <mxRectangle width="450" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -127,12 +127,12 @@
         <mxCell id="rsEL6gUZ8bBxBFCF2_QT-29" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="rsEL6gUZ8bBxBFCF2_QT-1">
           <mxGeometry y="300" width="480" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rsEL6gUZ8bBxBFCF2_QT-30" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=1;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;" vertex="1" parent="rsEL6gUZ8bBxBFCF2_QT-29">
+        <mxCell id="rsEL6gUZ8bBxBFCF2_QT-30" value="" style="shape=partialRectangle;overflow=hidden;connectable=1;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;" vertex="1" parent="rsEL6gUZ8bBxBFCF2_QT-29">
           <mxGeometry width="30" height="30" as="geometry">
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rsEL6gUZ8bBxBFCF2_QT-31" value="FOREIGN KEY (manager_id) REFERENCES employees(employee_id)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="rsEL6gUZ8bBxBFCF2_QT-29">
+        <mxCell id="rsEL6gUZ8bBxBFCF2_QT-31" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="rsEL6gUZ8bBxBFCF2_QT-29">
           <mxGeometry x="30" width="450" height="30" as="geometry">
             <mxRectangle width="450" height="30" as="alternateBounds" />
           </mxGeometry>
