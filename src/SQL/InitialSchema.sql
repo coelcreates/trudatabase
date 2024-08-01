@@ -21,6 +21,10 @@ USE employee_management_system;
 -- Drop tables if they exist to ensure a clean slate
 DROP TABLE IF EXISTS responsibilities;
 DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS roles;
+DROP TABLE IF EXISTS employee_roles;
+DROP TABLE IF EXISTS role_responsibilities;
+DROP TABLE IF EXISTS employee_responsibilities;
 
 -- Create the employees table
 CREATE TABLE employees (
@@ -77,7 +81,6 @@ CREATE TABLE employee_responsibilities (
     FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
     FOREIGN KEY (responsibility_id) REFERENCES responsibilities(responsibility_id)
 );
-`
 
 -- Restore previous SQL settings
 /*These lines restore the original settings:
