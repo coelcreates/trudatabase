@@ -77,7 +77,7 @@ CREATE TABLE employee_responsibilities (
     FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
     FOREIGN KEY (responsibility_id) REFERENCES responsibilities(responsibility_id)
 );
-
+`
 
 -- Restore previous SQL settings
 /*These lines restore the original settings:
