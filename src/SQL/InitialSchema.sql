@@ -30,9 +30,9 @@ CREATE TABLE employees (
     email VARCHAR(100) UNIQUE NOT NULL,
     phone_number VARCHAR(20) UNIQUE NOT NULL,
     hire_date DATE,
-    job_title VARCHAR(100) NOT NULL,
+    FOREIGN KEY (roles) REFERENCES roles(role_id),
     teaching_salary DECIMAL(10, 2),
-    greeting_salary DECIMAL(10, 2),
+    hospitality_salary DECIMAL(10, 2),
     manager_id INT,
     FOREIGN KEY (manager_id) REFERENCES employees(employee_id)
 );
