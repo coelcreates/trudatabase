@@ -23,6 +23,7 @@ erDiagram
         int role_id PK
         string role_name
         string description
+        boolean sub_flag
     }
 
 
@@ -35,7 +36,6 @@ erDiagram
     EMPLOYEE_ROLES {
         int employee_id PK,FK
         int role_id PK,FK
-        boolean sub_flag
     }
 
 

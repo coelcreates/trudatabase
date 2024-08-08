@@ -1,21 +1,33 @@
 YogaStudioManagementSystem/
 │
+├── projectplanning/
+│   ├── erDiagram.txt
+│   ├── EMS_ERD.png
+│   ├── EMS_ERD.json
+│   └── filestructure.txt
+│
 ├── src/
 │   ├── YogaStudio/
 │   │   ├── Controllers/
 │   │   │   ├── EmployeesController.cs
 │   │   │   ├── RolesController.cs
-│   │   │   └── TasksController.cs
+│   │   │   ├── ResponsibilitiesController.cs
+│   │   │   ├── EmployeeResponsibilitiesController.cs
+│   │   │   └── EmployeeRolesController.cs
 │   │   │
 │   │   ├── Models/
 │   │   │   ├── Employee.cs
 │   │   │   ├── Role.cs
-│   │   │   └── Task.cs
+│   │   │   ├── Responsibility.cs
+│   │   │   ├── EmployeeResponsibility.cs
+│   │   │   └── EmployeeRole.cs
 │   │   │
 │   │   ├── Services/
 │   │   │   ├── EmployeeService.cs
 │   │   │   ├── RoleService.cs
-│   │   │   └── TaskService.cs
+│   │   │   ├── ResponsibilityService.cs
+│   │   │   ├── EmployeeResponsibilityService.cs
+│   │   │   └── EmployeeRoleService.cs
 │   │   │
 │   │   ├── Data/
 │   │   │   └── YogaStudioContext.cs
@@ -23,12 +35,16 @@ YogaStudioManagementSystem/
 │   ├── YogaStudio.Tests/
 │   │    ├── EmployeeTests.cs
 │   │    ├── RoleTests.cs
-│   │    └── TaskTests.cs
+│   │    ├── ResponsibilityTests.cs
+│   │    ├── EmployeeResponsibilityTest.cs
+│   │    └── EmployeeRoleTest.cs
+│   │
 │   ├── SQL/
 │   │    │   ├── InitialSchema.sql
 │   │    │   ├── SeedData.sql
 │   │    │   └── Queries/
 │   │    │       └── ReportQueries.sql
+│   │
 │   ├── Program.cs
 │   └── appsettings.json
 │
