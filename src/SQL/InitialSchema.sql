@@ -54,31 +54,25 @@ CREATE TABLE responsibilities (
 
 -- Create the employee_roles junction table
 CREATE TABLE employee_roles (
-    employee_id INT,
-    role_id INT,
-    PRIMARY KEY (employee_id, role_id),
+    PRIMARY KEY id INT,
     FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
     FOREIGN KEY (role_id) REFERENCES roles(role_id)
 );
 
 -- Create the role_responsibilities junction table
 CREATE TABLE role_responsibilities (
-    role_id INT,
-    responsibility_id INT,
-    PRIMARY KEY (role_id, responsibility_id),
+    PRIMARY KEY id INT,
     FOREIGN KEY (role_id) REFERENCES roles(role_id),
     FOREIGN KEY (responsibility_id) REFERENCES responsibilities(responsibility_id)
 );
 
 -- Create the employee_responsibilities table to track responsibility assignments
 CREATE TABLE employee_responsibilities (
-    employee_id INT,
-    responsibility_id INT,
-    assigned_date DATE NOT NULL,
-    status ENUM('Pending', 'In Progress', 'Completed') DEFAULT 'Pending',
-    PRIMARY KEY (employee_id, responsibility_id),
+    PRIMARY KEY id INT,
     FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
-    FOREIGN KEY (responsibility_id) REFERENCES responsibilities(responsibility_id)
+    FOREIGN KEY (responsibility_id) REFERENCES responsibilities(responsibility_id),
+    assigned_date DATE NOT NULL,
+    status ENUM('Pending', 'In Progress', 'Completed') DEFAULT 'Pending'
 );
 
 -- Restore previous SQL settings
