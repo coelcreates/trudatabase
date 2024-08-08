@@ -35,7 +35,7 @@ CREATE TABLE employees (
     phone_number VARCHAR(20) UNIQUE NOT NULL,
     hire_date DATE,
     teaching_salary DECIMAL(10, 2),
-    hospitality_salary DECIMAL(10, 2),
+    hospitality_salary DECIMAL(10, 2)
 );
 
 -- Create the roles table
@@ -54,21 +54,27 @@ CREATE TABLE responsibilities (
 
 -- Create the employee_roles junction table
 CREATE TABLE employee_roles (
-    PRIMARY KEY id INT,
+    id INT PRIMARY KEY,
+    employee_id INT NOT NULL,
+    role_id INT NOT NULL,
     FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
     FOREIGN KEY (role_id) REFERENCES roles(role_id)
 );
 
 -- Create the role_responsibilities junction table
 CREATE TABLE role_responsibilities (
-    PRIMARY KEY id INT,
+    id INT PRIMARY KEY,
+    responsibility_id INT NOT NULL,
+    role_id INT NOT NULL,
     FOREIGN KEY (role_id) REFERENCES roles(role_id),
     FOREIGN KEY (responsibility_id) REFERENCES responsibilities(responsibility_id)
 );
 
 -- Create the employee_responsibilities table to track responsibility assignments
 CREATE TABLE employee_responsibilities (
-    PRIMARY KEY id INT,
+    id INT PRIMARY KEY,
+    employee_id INT NOT NULL,
+    responsibility_id INT NOT NULL,
     FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
     FOREIGN KEY (responsibility_id) REFERENCES responsibilities(responsibility_id),
     assigned_date DATE NOT NULL,
