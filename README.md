@@ -5,6 +5,25 @@ This system manages employee information, roles, responsibilities, and task trac
 
 ## Requirements
 
+## File Structure Overview
+-Project Planning:
+  -Contains ER diagrams and file structure documentation.
+
+-Source Code (src):
+
+  -YogaStudio: Main application code
+   -Controllers: Handle HTTP requests
+   -Models: Define data structures
+   -Services: Contain business logic
+   -Data: Includes database context
+  
+  -YogaStudio.Tests: Unit tests for your application
+  -SQL: Database scripts and queries
+
+-Solution file: YogaStudioManagementSystem.sln, "master file" that ties all parts of your application together in the development environment. It doesn't get deployed with your application, but it's crucial for development and building your projects.
+
+-README
+
 ### Employee Management
 - Store employee information with the following attributes:
   - First Name (string)
